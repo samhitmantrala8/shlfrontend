@@ -5,7 +5,7 @@ function App() {
   const [results, setResults] = useState([]);
 
   const handleSearch = async () => {
-    const response = await fetch("http://localhost:5000/recommend", {
+    const response = await fetch("https://shlbackend-w7k8.onrender.com/recommend", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ query }),
